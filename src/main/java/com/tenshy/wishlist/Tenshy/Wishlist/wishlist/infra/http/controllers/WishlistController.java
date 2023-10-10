@@ -58,7 +58,6 @@ public class WishlistController {
     }
 
     @PostMapping("products")
-    
     public ResponseEntity<WishlistView> add(@RequestBody WishlistProductDTO wishlistProductDTO) {
         final Wishlist wishlist = this.addProductToWishlistService.execute(wishlistProductDTO.getUserId(), wishlistProductDTO.getProductId());
         return ResponseEntity.status(201).body(WishlistViewMapper.mapper(wishlist));
