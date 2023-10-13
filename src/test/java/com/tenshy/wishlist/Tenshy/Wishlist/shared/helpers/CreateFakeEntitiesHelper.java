@@ -27,7 +27,6 @@ public class CreateFakeEntitiesHelper {
         user.setId(userId);
         user.setName("Tenshy Test");
         user.setEmail("tenshy_test@test.com");
-        user.setPassword("strongPasword");
 
         return user;
     }
